@@ -1,0 +1,118 @@
+.project-container{
+  margin: 2em;
+  font-family: 'Playfair Display', serif;
+  color: rgb(33, 76, 135);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+  margin-top: 400px;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+
+.content-inside::first-letter {
+  font-size: 2em;
+}
+.content-inside img {
+  margin: auto;
+  display: flex;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  background-color: lightblue;
+}
+.content-inside ul li {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: auto auto auto;
+  list-style-type: none;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+.content-inside a:hover{
+  color: gray;
+}
+.second-column {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.content-inside ul li a {
+  padding-top: 20px;
+  font-size: 2em;
+  color: darkblue;
+}
+.wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+nav {
+  background-color: lightpink;
+  padding: 1em;
+}
+nav ul{
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li a {
+  display: inline;
+  text-decoration: none;
+  font-size: 2em;
+  padding-top: 20px;
+}
+nav ul li a:hover {
+  color: red;
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 9fr 2fr;
+  height: 50px;
+  margin-top: -50px;
+}
+
+.footer ul li {
+  list-style-type: none;
+  text-align: right;
+  display: inline-block;
+}
+.footer img {
+  max-width: 30px;
+}
